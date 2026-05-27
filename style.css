@@ -4,6 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: arial, sans-serif;
 }
 
 h1 {
@@ -16,6 +17,8 @@ h1 {
     border-radius: 10px;
     width: 300px;
     box-shadow: 0 0 10px gray;
+    max-height: 500px;
+    overflow: auto;
 }
 
 input {
@@ -37,4 +40,32 @@ button {
 
 button:hover {
     background-color: blue;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    box-shadow: 0 0 5px rgba(0,0,0,0,0.1);
+    
+}
+
+.remover {
+    background-color: crimson;
+    width: auto;
+    padding: 5px 10px;
+}
+
+li:hover {
+    transform: scale(1.02);
 }
